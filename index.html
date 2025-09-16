@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biography Hub - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  /* INSERT HERO OVERRIDE: paste this near the end of <head> in index.html */
+  .bh-hero{position:relative;height:85vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:linear-gradient(270deg,#ff6600,#ff0066,#6600ff,#00ccff);background-size:600% 600%;animation:bh-gradientBG 15s ease infinite;color:#fff}
+  @keyframes bh-gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+  .bh-hero-content{position:relative;z-index:5;max-width:1100px;padding:0 20px}
+  .bh-hero h1{font-size:clamp(28px,5vw,56px);animation:bh-flashyText 6s infinite;font-weight:700}
+  @keyframes bh-flashyText{0%{color:#ff6600}25%{color:#ff0066}50%{color:#6600ff}75%{color:#00ccff}100%{color:#ff6600}}
+  .bh-hero p{color:rgba(255,255,255,0.95)}
+  .bh-cta{display:inline-block;padding:12px 22px;border-radius:999px;background:rgba(255,255,255,0.95);color:#111;font-weight:700;text-decoration:none}
+  /* hide shapes on small screens */
+  @media (max-width:768px){.bh-shape{display:none}}
+</style>
+
+
+</section>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Biography Hub</div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bio.html">Biographies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+ <section class="bh-hero" role="banner" aria-label="Homepage hero">
+  <div class="bh-hero-content">
+    <h1>Welcome to Biography Hub</h1>
+    <p>Discover inspiring stories from musicians, authors, actors and more — curated in one place.</p>
+    <a class="bh-cta" href="bio.html">Explore Biographies</a>
+  </div>
+
+  <div class="bh-shape" style="position:absolute;left:6%;top:18%;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,0.12);animation:bh-float1 7s ease-in-out infinite"></div>
+  <div class="bh-shape" style="position:absolute;right:8%;top:55%;width:150px;height:150px;border-radius:50%;background:rgba(255,255,255,0.12);animation:bh-float2 10s ease-in-out infinite"></div>
+  <div class="bh-shape" style="position:absolute;left:48%;top:42%;width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,0.12);animation:bh-float3 8s ease-in-out infinite"></div>
+</section>
+
+<!-- Latest News Section -->
+<section class="news-section">
+  <h2>Latest News</h2>
+  <div class="news-container">
+
+    <div class="news-card">
+      <img src="img/don.jpg" alt="News 1">
+      <div class="news-content">
+        <h3>Music Icon Releases New single</h3>
+        <p>A legendary artist drops a long-awaited project that’s already making waves worldwide.</p>
+         <a href="" class="btn">Read more</a>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="img/can.jpg" alt="News 2">
+      <div class="news-content">
+        <h3>Inspiring Story of Resilience</h3>
+        <p>A young activist turns personal struggles into a movement for social change.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="img/tech.jpg" alt="News 3">
+      <div class="news-content">
+        <h3>Tech CEO Redefines the Future</h3>
+        <p>Innovations in AI and space travel continue to shape how we live and dream.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- See All News Button -->
+  <div class="news-button">
+    <a href="news.html" class="btn">See All News</a>
+  </div>
+</section>
+</section>
+<!-- Featured Biography Section -->
+<section class="featured-bio">
+  <div class="featured-container">
+    <div class="featured-image">
+      <img src="img/enp.jpg" alt="Featured Biography">
+    </div>
+    <div class="featured-text">
+      <h2>Featured Biography of the Week</h2>
+      <h3>Empireprime</h3>
+      <p>
+        Steven, known by his stage name <strong>EmpirePrime</strong>, is a fast-rising musical artist 
+        whose voice and storytelling have been winning hearts across the world. His songs are 
+        deeply emotional, blending raw experiences with melodies that stay with you. 
+        From heartfelt ballads like <em>“Where Were You”</em> to uplifting tracks like 
+        <em>“Feel Alright”</em>, Steven is steadily climbing to the top, determined to make his 
+        voice heard everywhere.
+      </p>
+      <a href="steven.html" class="btn">Read Full Biography</a>
+    </div>
+  </div>
+</section>
+<!-- Celebrity Biographies Section -->
+<section class="celeb-bios">
+  <h2>Popular Biographies</h2>
+  <div class="celeb-container">
+    <div class="celeb-card">
+      <img src="img/nel.jpg" alt="Nelson Mandela">
+      <h3>Nelson Mandela</h3>
+      <p>Anti-apartheid revolutionary and former President of South Africa, symbol of peace and justice.</p>
+      <a href="mandela.html" class="btn">Read More</a>
+    </div>
+
+    <div class="celeb-card">
+      <img src="img/chi.jpg" alt="Chimamanda Ngozi Adichie">
+      <h3>Chimamanda Ngozi Adichie</h3>
+      <p>Award-winning Nigerian writer whose works explore identity, feminism, and culture.</p>
+      <a href="chimamanda.html" class="btn">Read More</a>
+    </div>
+
+    <div class="celeb-card">
+      <img src="img/musk.jpg" alt="Elon Musk">
+      <h3>Elon Musk</h3>
+      <p>Entrepreneur behind Tesla and SpaceX, reshaping technology and innovation worldwide.</p>
+      <a href="musk.html" class="btn">Read More</a>
+    </div>
+  </div>
+</section>
+
+<section class="featured-news">
+  <h2>Featured Stories</h2>
+  <div class="slider">
+    <div class="slides">
+      <div class="slide">
+        <img src="img/soft.jpg" alt="Story 1">
+        <div class="caption">
+          <h3>Breaking Boundaries</h3>
+          <p>An inspiring story of resilience and success.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/voice.jpg" alt="Story 2">
+        <div class="caption">
+          <h3>Voices That Echo</h3>
+          <p>The journey of a young artist finding his place.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/dream.jpg" alt="Story 3">
+        <div class="caption">
+          <h3>Dreams to Reality</h3>
+          <p>How visionaries change the world we live in.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- News Section -->
+  <section class="news-container">
+  <h2>Latest News</h2>
+
+  <div class="news-card">
+    <img src="img/wwy.jpg" alt="News 1">
+    <div class="news-text">
+      <h3>New Single Release</h3>
+      <p>empireprime just announced his upcoming album — a blend of soul and afrobeat sounds that fans are eager to hear.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <img src="img/tour.jpg" alt="News 2">
+    <div class="news-text">
+      <h3>Concert Tour 2025</h3>
+      <p>The tour schedule has been released, covering major cities across Africa and Europe this summer.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+    <!-- Add more news items here -->
+  </section>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  <section class="quotes-section">
+  <h2>Words That Inspire</h2>
+  <div class="quotes-container">
+    <div class="quote">
+      <p>"Success is not final, failure is not fatal: It is the courage to continue that counts."</p>
+      <span>- Winston Churchill</span>
+    </div>
+    <div class="quote">
+      <p>"The future belongs to those who believe in the beauty of their dreams."</p>
+      <span>- Eleanor Roosevelt</span>
+    </div>
+    <div class="quote">
+      <p>"Your story could be the light someone else needs to keep going."</p>
+      <span>- Biography Hub</span>
+    </div>
+  </div>
+</section>
+<section class="newsletter">
+  <h2>Stay Updated</h2>
+  <p>Subscribe to get the latest biographies and inspiring stories delivered to you.</p>
+  <form>
+    <input type="email" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Biography Hub</h3>
+      <p>Sharing inspiring life stories, achievements, and journeys from people across the globe.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="biographies.html">Biographies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: sj6292737@gmail.com</p>
+      <p>Phone: +234 704 2291 650</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Biography Hub. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
