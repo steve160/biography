@@ -599,3 +599,10 @@ body {
   display: block;
   margin: 0 auto;      /* centers each image */
 }
+.celebrity-page img {
+  max-width: 300px;   /* control how wide */
+  height: auto;       /* keep aspect ratio */
+  display: block;     /* centers nicely with margin */
+  margin: 0 auto;
+  border-radius: 10px; /* optional: rounded corners */
+}
