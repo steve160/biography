@@ -367,7 +367,7 @@ body {
   }
   @keyframes bh-float1{0%,100%{transform:translateY(0)}50%{transform:translateY(-26px)}}
 @keyframes bh-float2{0%,100%{transform:translateY(0)}50%{transform:translateY(-40px)}}
-@keyframes bh-float3{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}
+@keyframes bh-float3{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
 }
 /* Featured Biography Section */
 .featured-bio {
