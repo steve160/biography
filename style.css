@@ -591,3 +591,11 @@ body {
 .news-button .btn:hover {
   background: #d35400;
 }
+.bio-img {
+  width: 200px;        /* fixed width */
+  height: 200px;       /* fixed height */
+  object-fit: cover;   /* crops image nicely without stretching */
+  border-radius: 8px;  /* optional for smooth corners */
+  display: block;
+  margin: 0 auto;      /* centers each image */
+}
