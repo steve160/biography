@@ -1,23 +1,17 @@
-<DOCTYPE HTML>
-<html>
- <head>
-  <title>steven omo lile</title>
-	<style>
-	  body{background-color:blue;
-	  h3{color:black;
-	</style>
- </head>
- <body>
-   <h3>
-   steven is a sweet boy<br>
-   </h3>
-   <h5>
-   steven joseph
-   </h5>
-   <p>nevr mind skip</p>
- </body>
-
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steven Omo Lile</title>
+  <style>
+    body { background-color: blue; }
+    h3 { color: black; }
+  </style>
+</head>
+<body>
+  <h3>Steven is a sweet boy<br></h3>
+  <h5>Steven Joseph</h5>
+  <p>never mind, skip</p>
+</body>
 </html>

@@ -1,13 +1,14 @@
 /* Reset */
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
-  }
-}
-.site-footer {
+
+body {
+  background: #f9f9f9;
   color: #333;
 }
 
@@ -108,100 +109,6 @@
 /* Responsive */
 @media (max-width: 768px) {
   .bio-card {
-    flex-direction:items: center;
-    text-align: center;
-  }
-
-  .bio-card img {
-    width: 150px;
-    height: 150px;
-  }
-
-  .bio-text-wrapper {
-    width: 100%;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .navbar .nav-links {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-  }
-
-  .navbar .nav-links li {
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .navbar .nav-links li a {
-    padding-left: 20px;
-    display: block;
-  }
-}
-.site-footer {
-  background: #111;
-  color: #fff;
-  padding: 40px 20px 20px;
-  font-size: 14px;
-}
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.footer-container div {
-  flex: 1;
-  min-width: 250px;
-  margin: 10px;
-}
-
-.site-footer h3, 
-.site-footer h4 {
-  margin-bottom: 12px;
-  color: #ff6600; /* matches your hero accent */
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin: 6px 0;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-links a:hover {
-  color: #ff0066;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 15px;
-  border-top: 1px solid rgba(255,255,255,0.2);
-  margin-top: 20px;
-  font-size: 13px;
-  color: rgba(255,255,255,0.7);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .bio-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -236,4 +143,63 @@
   .navbar .nav-links li a {
     padding-left: 20px;
     display: block;
-  }  }
+  }
+}
+
+.site-footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-container div {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.site-footer h3,
+.site-footer h4 {
+  margin-bottom: 12px;
+  color: #ff6600; /* matches your hero accent */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 6px 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff0066;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 20px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+}
+
+/* Additional responsive rules (if needed) can be added here */
+}
