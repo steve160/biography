@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News & Updates</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f6f6f6;
+        color: #222;
+    }
+
+    header {
+        background: #111;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    .hero {
+        background: url('hero.jpg') center/cover no-repeat;
+        padding: 80px 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .categories {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        background: #fff;
+    }
+
+    .categories button {
+        border: none;
+        background: #111;
+        color: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .container {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    .main {
+        flex: 3;
+    }
+
+    .sidebar {
+        flex: 1;
+        background: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        height: fit-content;
+    }
+
+    .sidebar h3 {
+        margin-top: 0;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 10px;
+    }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .news-card {
+        background: #fff;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .news-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .news-card .content {
+        padding: 15px;
+    }
+
+    .news-card h4 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .news-card p {
+        font-size: 14px;
+        margin: 10px 0;
+        line-height: 1.5;
+    }
+
+    .news-card .tag {
+        font-size: 13px;
+        background: #111;
+        color: #fff;
+        padding: 4px 8px;
+        display: inline-block;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+
+    .pagination {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .pagination a {
+        margin: 0 5px;
+        padding: 10px 15px;
+        text-decoration: none;
+        background: #111;
+        color: #fff;
+        border-radius: 4px;
+    }
+
+    footer {
+        background: #111;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    @media(max-width: 900px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Latest News & Updates</h1>
+</header>
+
+<section class="hero">
+    <h2>Breaking: Major Announcement</h2>
+    <p>Stay updated with the latest stories, achievements, and exclusive releases.</p>
+</section>
+
+<div class="categories">
+    <button>All</button>
+    <button>Music Releases</button>
+    <button>Achievements</button>
+    <button>Events</button>
+    <button>Press</button>
+</div>
+
+<div class="container">
+    
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        
+        <h2>Recent News</h2>
+        <div class="news-grid">
+
+            <!-- NEWS CARD 1 -->
+            <div class="news-card">
+                <img src="news1.jpg" alt="">
+                <div class="content">
+                    <span class="tag">Music Release</span>
+                    <h4>Steven Set to Drop “Tired of Being Strong”</h4>
+                    <p>The emotional single drops Friday, revealing the pain behind strength...</p>
+                    <a href="#">Read More →</a>
+                </div>
+            </div>
+
+            <!-- NEWS CARD 2 -->
+            <div class="news-card">
+                <img src="news2.jpg" alt="">
+                <div class="content">
+                    <span class="tag">Event</span>
+                    <h4>Live Performance Announced for Lagos</h4>
+                    <p>Steven will be performing live at the Mega Festival this December...</p>
+                    <a href="#">Read More →</a>
+                </div>
+            </div>
+
+            <!-- NEWS CARD 3 -->
+            <div class="news-card">
+                <img src="news3.jpg" alt="">
+                <div class="content">
+                    <span class="tag">Press</span>
+                    <h4>Interview With SoundCity Africa</h4>
+                    <p>Steven opens up about his journey, struggles, and rise to fame...</p>
+                    <a href="#">Read More →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pagination">
+            <a href="#">« Prev</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">Next »</a>
+        </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>Trending News</h3>
+        <p>🔥 Steven Performs to 50,000 Live</p>
+        <p>🔥 “Where Were You” hits 1M Streams</p>
+        <p>🔥 New Documentary Coming Soon</p>
+
+        <h3>Upcoming Events</h3>
+        <p>• Lagos Concert
